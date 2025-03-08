@@ -1,18 +1,36 @@
 {
   "name": "hackathon",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hedera Payment Splitter",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "npx hardhat node",
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy": "npx hardhat run scripts/deploy.js --network testnet",
+    "lint": "eslint . --ext .js,.ts"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "hedera",
+    "blockchain",
+    "hardhat",
+    "smart-contracts"
+  ],
+  "author": "Dhruv Mehta",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "@hashgraph/hardhat-hethers": "^1.0.4",
     "@hashgraph/sdk": "^2.60.1",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.2.0",
     "dotenv": "^16.4.7",
+    "eslint": "^8.55.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1",
     "ethers": "^6.13.5",
-    "hardhat": "^2.22.19"
+    "hardhat": "^2.22.19",
+    "hardhat-deploy": "^0.14.0",
+    "hardhat-ethers": "^1.0.1"
   }
 }
