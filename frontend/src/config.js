@@ -124,3 +124,5 @@ export const ABI = [
       ]
       
 ];
+
+export const HEDERA_RPC_URL = "https://testnet.hashio.io/api";
